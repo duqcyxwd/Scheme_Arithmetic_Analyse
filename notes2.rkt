@@ -1,0 +1,12 @@
+(define (main)
+	(let ((a (read)))
+		(if (not(eof-object? a))
+			(begin
+				(display a)
+				(newline)
+				(main)
+			)
+		)
+	) 
+)
+(main)
